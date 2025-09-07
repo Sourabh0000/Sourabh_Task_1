@@ -1,0 +1,21 @@
+*{box-sizing:border-box;font-family:Inter, system-ui, Arial, sans-serif}
+body { margin:0; }
+.container{display:flex;flex-direction:column;min-height:100vh}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;background:#0b5;
+  background:linear-gradient(90deg,#0b5,#0cf);color:white}
+.nav .links button{margin-left:12px;padding:8px 12px;border-radius:6px;border:none;background:rgba(255,255,255,0.2);color:white}
+.main{flex:1}
+.banner{padding:3rem 1rem;text-align:center}
+.about{padding:1rem 2rem}
+.courses{padding:1rem 2rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{border:1px solid #ddd;padding:1rem;border-radius:8px;background:white}
+.contact{padding:1rem 2rem}
+.contact-form{display:grid;gap:8px;max-width:600px}
+.contact-form input,.contact-form textarea{padding:8px;border-radius:6px;border:1px solid #ccc}
+.contact-form button{padding:10px 14px;border:none;border-radius:6px;background:#0b5;color:white}
+.footer{padding:1rem;text-align:center;margin-top:auto;background:#f7f7f7}
+@media (max-width:600px){
+  .nav{padding:0.75rem}
+  .banner{padding:2rem 1rem}
+}
